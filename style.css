@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+.header{
+    width: 100%;
+    color: white;
+    line-height: 80px;
+   
+    height: 100px;
+    background-color: rgb(255, 173, 187);
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image{
+    width: 370px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina1{
+   width: 100%;
+   display: flex;
+   
+   align-items: center;
+   gap: 10px;
+   height: 500px;
+   flex-wrap: wrap;
+   background-color: blanchedalmond;
+}
+
+.infor_loja{
+
+    
+   width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding: 10px;
+    
+}
+.infor_loja p{
+    display: inline-block;
+    
+}
+
+img{
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    
+}
+
+.produtos{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 5px;
+    width: 100%;
+    background-color: rgb(147, 251, 174);
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(210, 231, 210);
+}
+
+.imgbt{
+   background-color: rgb(36, 172, 177);
+    display: flex;
+    width:100%;
+    
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.container-caroseul{
+    width: 100%;
+}
+
+.container-imgs{
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+.container-imgs img{
+    width: 70%;
+    height: 24rem;
+    border-radius: 5px;
+    
+}
+
+
+.slider{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+.retorno , .proximo {
+    color: white;
+  
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.proximo{
+    margin-right: 30px;
+}
+.retorno{
+    margin-left: 30px;
+}
+
+.on{
+   
+  opacity: 1;
+}
+
+.caroseul_indicado{
+    
+    width: 30%;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+    height: 30px;
+   
+}
+
+.caroseul{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(67, 225, 180);
+    border-radius: 50%;
+}
+.container-imgs .caroseul_indicado{
+    margin-bottom:-250px;
+}
+.active{
+    background-color: black;
+}
+ p{
+    margin-top: 20px;
+}
