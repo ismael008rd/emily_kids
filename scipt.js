@@ -1,11 +1,11 @@
 
 
 const images = document.querySelectorAll('.slider')
-
+const caroseul = document.querySelectorAll('.caroseul')
 const btnAvançar = document.querySelector('.proximo')
 const btnvoltar = document.querySelector('.retorno')
 let currentSlide =0
-let index = 0
+
 function next(){
    removeI()
    if(currentSlide==images.length -1){
@@ -15,6 +15,8 @@ function next(){
       
    }
    Adicionar()
+   atualalizarIconC(currentSlide)
+   
   
   
 }
@@ -26,7 +28,7 @@ function previImgs(){
       currentSlide--
    }
    Adicionar()
-   
+   atualalizarIconC(currentSlide)
   
 }
 function removeI(){
@@ -49,27 +51,31 @@ btnvoltar.addEventListener('click', previImgs)
 
 // caroseul indicato
 
-const caroseul = document.querySelectorAll('.caroseul')
 
-// caroseul.forEach((el)=>{
-//    el.addEventListener('click',(el1)=>{
-//      const pegarEv= el1.target
-//      pegarEv.classList.toggle('active')
-//      console.log(pegarEv)
-//    })
-// })
+
 
 
 
    caroseul.forEach((indicator, index) => {
+     
       indicator.addEventListener('click', () => {
         images.forEach((slide) =>slide.classList.remove('on'));
       
-        caroseul.forEach((indicator) =>indicator.classList.remove('active') );
+        caroseul.forEach((indicator) =>{indicator.classList.remove('active')
+        console.log(indicator) });
         images[index].classList.add('on');
-        console.log(index)
+       
         indicator.classList.add('active');
       });
     });
    
- 
+ function atualalizarIconC(index){
+   caroseul.forEach((el)=>{
+      el.classList.remove('active')
+   })
+
+      if(caroseul[index].getAttribute('class','carrosel')){
+          caroseul[index].classList.add('active')
+
+      }
+ }
