@@ -126,8 +126,8 @@ img{
 }
 .slider {
     opacity: 0;
-    width: 60%;
-    height: 16rem;
+    width:10rem;
+    height: 15rem;
    
     position: absolute;
    
@@ -140,6 +140,9 @@ img{
   
     font-size: 100px;
     cursor: pointer;
+}
+.retorno:hover, .proximo:hover{
+    color: rgb(4, 146, 146);
 }
 
 .proximo{
