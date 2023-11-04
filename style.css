@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&family=Sarabun:ital,wght@0,200;0,300;0,500;1,100;1,200;1,400;1,500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -69,7 +72,7 @@ img{
 
 .produtos{
     display: flex;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     flex-wrap: wrap;
     justify-content:space-evenly;
     gap: 5px;
@@ -94,7 +97,7 @@ img{
     display: flex;
     width:100%;
     
-    min-height: 70vh;
+    min-height: 60vh;
     align-items: center;
     justify-content: center;
 }
@@ -106,22 +109,28 @@ img{
    
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
-    width: 700px;
-}
-.container-imgs img{
-    width: 70%;
-    height: 24rem;
-    border-radius: 5px;
-    
+    height: 50%;
+    width:50%;
 }
 
 
-.slider{
+
+
+.slider img{
+    width: 300px;
+    height: 300px;
+}
+.slider {
     opacity: 0;
+    width: 300px;
+    height: 300px;
+   
     position: absolute;
-    width: 100%;
+   
 }
 
 
@@ -141,8 +150,9 @@ img{
 }
 
 .on{
-   
+position: static;
   opacity: 1;
+ 
 }
 
 .caroseul_indicado{
@@ -165,9 +175,7 @@ img{
     background-color: rgb(67, 225, 180);
     border-radius: 50%;
 }
-.container-imgs .caroseul_indicado{
-    margin-bottom:-250px;
-}
+
 .active{
     background-color: black;
 }
